@@ -1,11 +1,12 @@
 //Conditionally load jQuery
 //inspired by http://www.smashingmagazine.com/2010/05/23/make-your-own-bookmarklets-with-jquery/
+//thanks to ctbarna for correction
 
 if (typeof jQuery == 'undefined') {
 	var jQ = document.createElement('script');
 	jQ.type = 'text/javascript';
-	jQ.onload = eventTracking;
-	jQ.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js';
+	jQ.onload = myOnLoadEvent;
+	jQ.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
 	document.body.appendChild(jQ);
 } else {
 	myOnLoadEvent();
