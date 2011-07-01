@@ -11,3 +11,5 @@ Script to check if a page has jQuery already initialized, if not, adds the neces
 Google Analytics Virtual Event Tracking Code
 ===========================================
 Three code snippets to fire various Google Analytics virtual events. The first tracks the usage of mailto: links, the second tracks downloads of common file types, and the last tracks external link usage.
+
+
